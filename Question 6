@@ -1,0 +1,25 @@
+# Q6. Consider the following dataframe df & and answer the following questions
+import pandas as pd
+dic={'rollno':[1,2,3,4,5,6],'name':['Prerna Singh','Manish Arora','Tanish Goel','Falguni Jain','Kanika Bhatnagar','Ramandeep Kaur'], 'UT1':[24,18,20,22,15,20],'UT2':[24,17,22,20,20,15],'UT3':[20,19,18,24,18,22],'UT4':[22,22,24,20,22,24]}
+df=pd.DataFrame(dic)
+# print(df)
+
+#(i) Which of the options would give an output?
+# print(df.max())
+
+#(ii) The teacher wants to know the marks scored by the student with roll number 4. Help her identify the correct set of statement(s) from the given options
+# print(df[df['rollno'==4]])
+
+#(iii) Which of the following statements will give the exact number of vales in each column of the dataframe?
+#(I)print(df.count()) (II)print(df.count(0)) (III)print(df.count) (IV)print((df.count(axis='index))
+print(df.count()) #Method 1
+
+print(df.count(0)) #Method 2 
+print(df.count(axis='index')) #Method 3
+
+#(iv) Which of the following command will display the column labels of the DataFrame
+print(df.columns)
+
+#(v)Ms. Sharma wants to add a new column, the scores of Grade with the values A B A A B A to the dataframe. Help her choose the command to do so
+df.loc["Grade"]=["A","B","A","A","B","A"] #Method 1
+df["Grade"]=["A","B","A","A","B","A"] #Method 2
