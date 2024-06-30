@@ -1,1 +1,15 @@
+# Write a program that stores the sales of 5 fast moving items of a store for each month in 6 series objects i.e S1 object stores sales of these 5 items in 1st month, S2 in 2nd month, and so on
+# The program should display the summary sales report like this
+# Total yearly sales item wise 
+# Max sales of item made: <Item name>
+# Max sales for individual items:-
+# Max sales of item 1 made: <Month name> 
+# Max sales of item 2 made: <Month name> and so on...
 
+import pandas as pd
+s1 = pd.Series([63, 23, 69, 34, 43])
+s2 = pd.Series([45, 82, 27, 56, 78])
+s3 = pd.Series([91, 32, 58, 74, 65])
+s4 = pd.Series([88, 47, 92, 39, 21])
+s5 = pd.Series([57, 64, 83, 29, 75])
+s6 = pd.Series([68, 99, 31, 48, 77])
