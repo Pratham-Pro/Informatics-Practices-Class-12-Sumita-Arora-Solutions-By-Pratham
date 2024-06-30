@@ -1,0 +1,7 @@
+# Q3. A series object (say T1) stores the avg temperature recorded on each day of a month. Write code to display the temperatures recorded on 
+import pandas as pd
+T1 = pd.Series([23,52,32,54,34,23,4,1,4,43,24,23,52,43,23,52,34,54,23,32,42,34,2,52,34,3,20,34,23,50])
+# First 7 days
+print(T1.head(7))
+# Last 7 days
+print(T1.tail(7))
