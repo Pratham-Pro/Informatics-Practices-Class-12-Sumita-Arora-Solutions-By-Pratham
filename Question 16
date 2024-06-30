@@ -1,0 +1,8 @@
+# Q.16 Four dictionaries store the details of four employees of the month as (empno, name). Write a program to create a dataframe from these
+import pandas as pd
+e1 = {"EmpNo": 1, "Name": "John"}
+e2 = {"EmpNo": 2, "Name": "Steve"}
+e3 = {"EmpNo": 3, "Name": "Mario"}
+e4 = {"EmpNo": 4, "Name": "Pratham"}
+df=pd.DataFrame([e1,e2,e3,e4])
+print(df)
