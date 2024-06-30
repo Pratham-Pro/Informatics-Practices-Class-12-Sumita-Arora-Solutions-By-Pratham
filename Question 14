@@ -1,0 +1,9 @@
+# Q.14 Write a program to create a dataframe that stores 2 columns, which store the series objects of the previous two questions (11 and 12)
+import pandas as pd
+import numpy as np
+array=np.array(['a','b','c','d','e','f','g'])
+s1=pd.Series(array)
+x=pd.Series([1,2,3,4,5,6,7])
+
+df = pd.DataFrame([s1,x])
+print(df)
