@@ -1,0 +1,4 @@
+# Q9. Write code to print all information about a series object
+import pandas as pd
+Temp1 = pd.Series([12,63,32,42,52,12,42])
+print(Temp1.info())
