@@ -1,0 +1,10 @@
+# Q8. Three series store the marks of 10 students in three terms. Roll numbers of students from the index of these Series objects. The three series objects have the same indexes. Calculate the total weighted marks obtained by the students as per the following formula
+# Final marks = 25% Term1 + 25% Term2 + 50% Term3
+# Store the final marks of students in another series object
+
+import pandas as pd
+s1 = pd.Series([87,74,84,68,34,63,56,86,45,92])
+s2 = pd.Series([65,85,32,75,37,84,52,57,96,98])
+s3 = pd.Series([54,68,35,21,56,83,92,16,83,96])
+s4 = (0.25*s1)+(0.25*s2)+(0.5*s3)
+print(s4)
