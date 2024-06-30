@@ -1,0 +1,4 @@
+# Q2. Write a python code to create a series object Temp2 that stores temperatures of seven days of the week. It's indexes should be Sunday, Monday,..... Saturday
+import pandas as pd
+Temp2 = pd.Series([12,63,32,42,52,12,42], index=["Sunday", "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"])
+print(Temp2)
