@@ -1,0 +1,18 @@
+# Q5. Ekam, a Data Analyst with a multinational brand has designed the DataFrame df that contains the four quarters sales days of different stores as shown below
+import pandas as pd
+dic = {'Store':["Store1","Store2","Store3"], 'Qtr1':[300,350,250], 'Qtr2':[240,340,180], 'Qtr3':[450,403,145], 'Qtr4':[230,210,160]}
+df = pd.DataFrame(dic)
+print(df)
+
+# Answer the following questions: 
+# (i) Predict the following output
+print(df.size)
+print(df[1:3])
+
+# (ii) Delete the last row from the df
+df.drop(2)
+
+# (iii) Write python statement to add new column Total_Sales which is the addition of all the 4 quarter sales
+x = df.iloc[0,:]
+df["Total_Sales"]=sum(x.values[1:])
+print(df)
