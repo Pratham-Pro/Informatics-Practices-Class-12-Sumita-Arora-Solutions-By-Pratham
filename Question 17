@@ -1,0 +1,5 @@
+# Q.17 A list stores 3 dictionaries each storing details (Old price, new price, change). Write a program to create a dataframe from it
+import pandas as pd
+list=[{"Old price":40, "New price":80, "Change":"+40"}, {"Old price": 55, "New price": 90, "Change": "+35"}, {"Old price": 70, "New price": 100, "Change": "+30"}]
+df=pd.DataFrame(list)
+print(df)
