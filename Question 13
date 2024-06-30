@@ -1,0 +1,5 @@
+# Q.13 Write a program to store a Series object that stores table of number 5
+import pandas as pd
+list=[1,2,3,4,5,6,7,8,9,10]
+s1=pd.Series(list)
+print(s1*5)
