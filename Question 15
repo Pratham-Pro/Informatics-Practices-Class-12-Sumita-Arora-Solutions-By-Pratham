@@ -1,0 +1,5 @@
+# Q.15 Write a program to create a dataframe storing salesman details (name, zone, sales) of 5 salesmen
+import pandas as pd
+dic={"Name":['John','Steve','Mario','Pratham'],"Zone":["A","B","C","D"],"Sales":[834,374,542,274]}
+df=pd.DataFrame(dic)
+print(df)
