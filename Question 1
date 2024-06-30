@@ -1,0 +1,4 @@
+# Q1. Write a python code to create a series object Temp1 that stores temperatures of seven days in it. Take any random seven temperatures
+import pandas as pd
+Temp1 = pd.Series([12,63,32,42,52,12,42])
+print(Temp1)
