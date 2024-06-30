@@ -1,0 +1,21 @@
+# Q4. Series objects Temp1, Temp2, Temp3, Temp4 store the temperatures of days of week1, week2, week3, week4 respectively.
+import pandas as pd
+week1 = [23,52,32,54,34,23,4]
+week2 = [1,4,43,24,23,52,43]
+week3 = [23,52,34,54,23,32,42]
+week4 = [34,2,52,34,3,20,34]
+Temp1 = pd.Series(week1)
+Temp2 = pd.Series(week2)
+Temp3 = pd.Series(week3)
+Temp4 = pd.Series(week4)
+# Write a script to print the average temperature of the week & the entire month
+
+# Print the average temperature per week
+print("Avg temp of: \n")
+print("Week 1: ", sum(Temp1)/len(Temp1))
+print("Week 2: ", sum(Temp2)/len(Temp2))
+print("Week 3: ", sum(Temp3)/len(Temp3))
+print("Week 4: ", sum(Temp4)/len(Temp4))
+
+# Print the average temperature the entire month
+print("Avg temp of the whole month: ", (sum(Temp1)+sum(Temp2)+sum(Temp3)+sum(Temp4))/(len(Temp1)+len(Temp2)+len(Temp3)+len(Temp4)))
