@@ -1,0 +1,11 @@
+# 11. Write a program to create 3 different series objects from 2 rows of a dataframe df
+import pandas as pd
+dic = {'Store':["Store1","Store2","Store3"], 'Qtr1':[300,350,250], 'Qtr2':[240,340,180], 'Qtr3':[450,403,145], 'Qtr4':[230,210,160]}
+df = pd.DataFrame(dic)
+
+x = df.iloc[0,:]
+y = df.iloc[1,:]
+z = df.iloc[2,:]
+print(x)
+print(y)
+print(z)
